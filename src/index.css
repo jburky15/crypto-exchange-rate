@@ -1,0 +1,90 @@
+:root {
+  --main-background: rgb(4, 22, 49);
+  --interior-background: rgb(3, 17, 37);
+  --border-color: 5px solid rgb(27, 49, 70);
+  --text-color: rgb(255, 255, 255);
+  --button-color: rgb(28, 103, 143);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  background-color: var(--main-background);
+  margin: 15vh 10vw;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-wrapper {
+  display: flex;
+}
+
+.news-feed {
+  background-color: var(--interior-background);
+  padding: 2px 10px;
+  margin: 5px;
+  max-width: 300px;
+  border: var(--border-color);
+  border-radius: 5px;
+}
+
+.news-feed h2 {
+  text-align: center;
+}
+
+.news-feed a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.currency-converter {
+  background-color: var(--interior-background);
+  padding: 2px 10px;
+  margin: 5px;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  max-height: 500px;
+  border: var(--border-color);
+  border-radius: 5px;
+}
+
+.exchange-rate {
+  background-color: var(--interior-background);
+  padding: 10px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.input-box {
+  background-color: var(--interior-background);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+input, select {
+  border: none;
+}
+
+button {
+  border: none;
+  float: right;
+  padding: 3px;
+  margin: 2px 3px;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--button-color);
+  color: var(--text-color);
+}
